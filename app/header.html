@@ -1,0 +1,18 @@
+<header>
+    <nav>
+      <ul>
+        <li>
+          <a href="home.html" {%if file.frontMatter.title=='Home' %} class="active" {% endif %}>Home</a>
+        </li>
+        <li>
+          <a href="competition.html" {%if file.frontMatter.title=='Competition' %} class="active" {% endif %}>Lions</a>
+        </li>
+        <li>
+          <a href="winners.html" {%if file.frontMatter.title=='Winners' %} class="active" {% endif %}>Tigers</a>
+        </li>
+        <li>
+          <a href="events.html" {%if file.frontMatter.title=='Events' %} class="active" {% endif %}>Bears</a>
+        </li>
+      </ul>
+    </nav>
+  </header>

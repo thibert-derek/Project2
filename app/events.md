@@ -1,0 +1,4 @@
+---
+Title: Event
+template: page
+---
