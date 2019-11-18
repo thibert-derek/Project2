@@ -4,6 +4,9 @@ const sass = require('gulp-sass');
 const wrap = require('gulp-wrap');
 const markdown = require('gulp-markdown');
 const frontMatter = require('gulp-front-matter');
+const del = require('delete');
+const concat = require('gulp-concat');
+const browserSync = require('browser-sync').create();
 
 function md(){
     return src('app/**/*.md')
@@ -14,7 +17,7 @@ function md(){
           data =>
             fs
               .readFileSync(
-                'app/templates/' + data.file.frontMatter.template + '.html'
+                'app/' + data.file.frontMatter.template + '.html'
               )
               .toString(),
           null,
@@ -22,6 +25,10 @@ function md(){
         )
       )
     .pipe(dest('prod/'));
+}
+
+function font(){
+  return src('app/**/*.ttf').pipe(dest('prod/css/'));
 }
 
 function css(){
@@ -32,13 +39,15 @@ function css(){
 }
 
 function images() {
-  return src('app/images/*').pipe(dest('prod/images'));
+  return src('app/**/*.jpg', 'app/**/*.jpeg').pipe(dest('prod/images'));
 }
 
 function watch_task(){
     watch('app/**/*.scss', series(css, reload));
     watch('app/**/*.md', series(md, reload));
-    watch('app/**/*', series(images, reload));
+    watch('app/**/*.jpg', series(images, reload));
+    watch('app/**/*.jpeg', series(images, reload));
+    watch('app/**/*.ttf', series(font, reload));
 }
 
 function sync(cb){
@@ -54,9 +63,9 @@ function reload(cb){
 }
 
 function clean(cb){
-    del('prod/**/*', cb);
+    del(['prod/**/*'], cb);
 }
 
 exports.clean = clean;
-exports.build = series(clean, parallel(md, images, css));
+exports.build = series(clean, parallel(md, images, css, font));
 exports.default = series(exports.build, sync, watch_task);

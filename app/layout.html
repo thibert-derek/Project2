@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${file.frontMatter.title}</title>
+    <title>{{file.frontMatter.title | upper}}</title>
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    {% include "header.html" %}
+    {% include "app/header.html" %}
   
     {% block main %}Default content{% endblock %}
     </main>

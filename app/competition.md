@@ -1,5 +1,5 @@
 ---
-Title: Competition
+title: Competition
 template: page
 ---
 
@@ -23,5 +23,5 @@ The padding, called yokes, was made of cotton stuffed into wooden frames. One of
 
 The ruins of Chichén Itzá in Mexico’s Yucatán peninsula has the biggest Pok-A-Tok court of all Mesoamerica. It is 545 feet long and 225 feet wide. The Great Ballcourt of Chichén Itzá has its walls covered with carved depictions of sacrifices made to the gods at the game’s end. Near the court, there is a stone platform decorated with hundreds of carved skulls.
 
-Learn [more]
+Learn more -
 https://hobbylark.com/misc/Pok-A-Tok-The-Maya-Ball-Game

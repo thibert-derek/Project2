@@ -1,5 +1,5 @@
 ---
-Title: Event
+title: Event
 template: page
 ---
 
@@ -17,5 +17,4 @@ Pok a Tok Ball Game | Cathedral of San Ildefonso, Calle 60 between 61 and 57 A, 
 Pok a Tok Ball Game | Cathedral of San Ildefonso, Calle 60 between 61 and 57 A, Centro next to the Plaza Grande, Merida, Mexico | Saturday December 28th 2019 @ 8:30pm
 Pok a Tok Ball Game | Cathedral of San Ildefonso, Calle 60 between 61 and 57 A, Centro next to the Plaza Grande, Merida, Mexico | Saturday January 4th 2020 @ 8:30pm
 
-[More]
-(https://yucatanexpatlife.com/calendar/mayan-ballgame-at-the-cathedral/all/)
+More events at - (https://yucatanexpatlife.com/calendar/mayan-ballgame-at-the-cathedral/all/)

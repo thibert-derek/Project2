@@ -1,9 +1,9 @@
 ---
-Title: Winners
+title: Winners
 template: page
 ---
 
-![Pok A Tok Champions](images/pok2.jpeg)
+![Pok A Tok Champions](images/pok2.jpg)
 
 Belize’s Pok Ta Pok team Ek’ Balam won their first game in the annual Pok Ta Pok World Championship tournament – Copa Mundial Pelota MesoAmericana Kuzkatan 2019 which is being held this year in El Salvador. And it was a huge win which can be described as a beating and a lashing against Guatemala.
 
