@@ -5,3 +5,6 @@ Started the project. Added a gulpfile to the project.
 
 11/16/19
 Added the markdown, html, and scss files.
+
+11/20/19
+Added the Javascript files.

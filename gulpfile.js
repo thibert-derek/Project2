@@ -38,6 +38,12 @@ function css(){
     .pipe(dest('prod/css/'));
 }
 
+function js(){
+  return src('app/**/*.js')
+  .pipe(concat('styles.js'))
+  .pipe(dest('prod/'));
+}
+
 function images() {
   return src('app/**/*.jpg', 'app/**/*.jpeg').pipe(dest('prod/images'));
 }
@@ -48,6 +54,7 @@ function watch_task(){
     watch('app/**/*.jpg', series(images, reload));
     watch('app/**/*.jpeg', series(images, reload));
     watch('app/**/*.ttf', series(font, reload));
+    watch('app/**/*.js', series(js, reload));
 }
 
 function sync(cb){
@@ -67,5 +74,5 @@ function clean(cb){
 }
 
 exports.clean = clean;
-exports.build = series(clean, parallel(md, images, css, font));
+exports.build = series(clean, parallel(md, images, css, font, js));
 exports.default = series(exports.build, sync, watch_task);

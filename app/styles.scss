@@ -18,15 +18,17 @@ body {
     line-height: 1.5;
 }
 
-nav { 
-    list-style-type: none;
-    display: block;
-    float: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+body > header > nav { 
+    width: 100%;
+    overflow: auto;
+    position: relative;
 }
 
+nav > ul {
+    margin: 0;
+    padding: 0;
+
+}
 body > header > nav li {
     display: block;
     background-color: $sec;
@@ -35,9 +37,8 @@ body > header > nav li {
     width: 25%;
     line-height: 2;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
     list-style-type: none;
+    color: white;
 }
 
 body > header > h1 {
@@ -50,32 +51,58 @@ body > header > h1 {
 
 footer {
     display: block;
-    background-color: white;
+    background-color: $sec;
     margin: 0;
     padding: 0;
     width: 100%;
     line-height: 2;
     text-align: center;
+    color: white;
 }
 
 body > article { 
     background-color: white;
     width: 100%;
-    padding: 0%;
+    padding: 0;
     margin: 0;
     line-height: 2;
+    overflow: hidden;
+}
+
+body > div{
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+    overflow: hidden;
+}
+
+article h1, p {
+    margin: 1%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1%;
+    padding: 1%;
+}
+
+td {
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background-color: beige;
+}
+
+th {
+    background-color: beige;
 }
 
 img {
     display: block;
     width: 100%;
-}
-
-nav li {
-    background-color: $sec;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
 }
 
 nav li:active {
@@ -87,5 +114,21 @@ nav li a {
     color: white;
     list-style-type: none;
     text-decoration: none;
-    width: 25%;
+}
+
+nav li a:active {
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav .current {
+    background-color: white;
+}
+
+
+.active {
+    background-color: white;
+    color: black;
+    padding: 1%
 }

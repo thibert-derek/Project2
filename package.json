@@ -18,5 +18,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-wrap": "^0.15.0",
     "nunjucks": "^3.2.0"
+  },
+  "dependencies": {
+    "jQuery": "^1.7.4"
   }
 }

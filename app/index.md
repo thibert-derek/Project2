@@ -1,6 +1,6 @@
 ---
 title: Home
-template: page
+template: home
 ---
 
-![ballgame](images/game.jpeg)
+![ballgame](images/Ballgame8.jpg)
