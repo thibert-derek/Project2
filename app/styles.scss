@@ -122,13 +122,122 @@ nav li a:active {
     text-decoration: none;
 }
 
-nav .current {
-    background-color: white;
-}
-
-
 .active {
     background-color: white;
     color: black;
     padding: 1%
+}
+
+.row > .column {
+    padding: 0;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.column {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    float: left;
+    width: 20%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding-bottom: 10px;
+    width: 70%;
+    max-width: 1200px;
+  }
+
+  .modal-content > img {
+      margin: 10px;
+  }
+
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  .prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  img.demo {
+    opacity: 0.6;
+  }
+
+  .active,
+.demo:hover {
+  opacity: 1;
+}
+
+.mySlides {
+    margin-bottom: 10px;
 }

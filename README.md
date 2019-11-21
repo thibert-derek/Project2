@@ -7,4 +7,5 @@ Started the project. Added a gulpfile to the project.
 Added the markdown, html, and scss files.
 
 11/20/19
-Added the Javascript files.
+Added the Javascript files. Tried to get "Events page nav to be highlighted when selected.
+Got the lightbox going.

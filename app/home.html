@@ -1,7 +1,72 @@
 {% extends "app/layout.html" %}
 
 {% block main %}
-<div>
-  {{ contents | safe }}
+<div class = "row">
+  <div class="column">
+    <img src="images/Ballgame8.jpg" onclick="openModal();currentSlide(1)">
+  </div>
+  <div class="column">
+    <img src="images/ballgamecentramerica18.jpg" onclick="openModal();currentSlide(2)">
+  </div>
+  <div class="column">
+     <img src="images/ball-game-court.jpg" onclick="openModal();currentSlide(3)">
+  </div>
+  <div class="column">
+     <img src="images/pok2.jpg" onclick="openModal();currentSlide(4)">
+  </div>
+  <div class="column">
+     <img src="images/sanildefonso1_lg.jpg" onclick="openModal();currentSlide(5)">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+     <div class="mySlides">
+        <div class="caption-container">
+            <p id="caption">Ball Game</p>
+        </div>
+         <div class="numbertext">1 / 5</div>
+         <img src="images/Ballgame8.jpg" style="width:100%">
+     </div>
+
+    <div class="mySlides">
+        <div class="caption-container">
+            <p id="caption">Central America Pok A Tok</p>
+        </div>
+        <div class="numbertext">2 / 5</div>
+        <img src="images/ballgamecentramerica18.jpg" style="width:100%">
+        <br>
+     </div>
+
+     <div class="mySlides">
+        <div class="caption-container">
+            <p id="caption">Ball Court in Chichen Itza</p>
+        </div>
+        <div class="numbertext">3 / 5</div>
+        <img src="images/ball-game-court.jpg" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+        <div class="caption-container">
+            <p id="caption">Pok A Tok</p>
+        </div>
+       <div class="numbertext">4 / 5</div>
+       <img src="images/pok2.jpg" style="width:100%">
+    </div>
+
+     <div class="mySlides">
+        <div class="caption-container">
+            <p id="caption">Cathedral of San Ildefonso, Merida, Mexico</p>
+        </div>
+      <div class="numbertext">5 / 5</div>
+      <img src="images/sanildefonso1_lg.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
 </div>
 {% endblock %}
