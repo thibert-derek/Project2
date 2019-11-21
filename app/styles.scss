@@ -144,6 +144,10 @@ nav li a:active {
     width: 20%;
 }
 
+.column > img:hover{
+  box-shadow: 5px 5px black;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -240,4 +244,8 @@ nav li a:active {
 
 .mySlides {
     margin-bottom: 10px;
+}
+
+.mySlides:hover {
+  box-shadow: black;
 }
